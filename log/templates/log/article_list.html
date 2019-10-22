@@ -1,0 +1,14 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Top</title>
+        <style>body {padding: 10x;}</style>
+    </head>
+    <body>
+        <h1>ランログ一覧</h1>
+        {% for v in object_list %}
+            <p>{{ v.Mileage }},{{ v.Rantime }},{{ v.calory }},{{ v.author }}</p>
+        {% endfor %}
+    </body>
+</html>
